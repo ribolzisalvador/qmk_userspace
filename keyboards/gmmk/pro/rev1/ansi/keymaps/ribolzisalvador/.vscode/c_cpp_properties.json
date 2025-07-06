@@ -1,0 +1,64 @@
+{
+    "configurations": [
+        // {
+        //     "name": "Win32",
+        //     "includePath": [
+        //         "${workspaceFolder}/**"
+        //     ],
+        //     "defines": [
+        //         "_DEBUG",
+        //         "UNICODE",
+        //         "_UNICODE"
+        //     ],
+        //     "windowsSdkVersion": "10.0.22000.0",
+        //     "cStandard": "c17",
+        //     "cppStandard": "c++17",
+        //     "intelliSenseMode": "windows-msvc-x64"
+        // }
+        // ,
+        {
+            "name": "Win32",
+            "includePath": [
+                // VS2022 Build Tools for VSCode directory
+                "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.41.34120/atlmfc/include/*",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/um",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/ucrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/shared",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/winrt",
+                //Fix to where MSYS is installed
+                "D:/Other/QMK_MSYS/mingw64/avr/include/**",
+                "D:/Other/QMK_MSYS/mingw64/lib/gcc/avr/12.2.0/include/**",
+                "D:/Other/QMK_MSYS/mingw64/lib/gcc/avr/12.2.0/include-fixed/**",
+                "D:/Other/QMK_MSYS/mingw64/arm-none-eabi/include/**",
+                "D:/Other/QMK_MSYS/mingw64/lib/gcc/arm-none-eabi/12.2.0/include/**", //Update to latest library
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/quantum/**",
+                "${workspaceFolder}/tmk_core/common/**",
+                "${workspaceFolder}/quantum/audio/**",
+                "${workspaceFolder}/quantum/process_keycode/**",
+                "${workspaceFolder}/drivers/avr/**",
+                "${workspaceFolder}/lib/chibios/**",
+                "${workspaceFolder}/lib/lufa/**"
+            ],
+            "defines": [],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    // VS2022 Build Tools for VSCode directory
+                    "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.41.34120/include/*",
+                    "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.41.34120/atlmfc/include/*",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/um",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/ucrt",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/shared",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/winrt",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": false,
+                "databaseFilename": ""
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

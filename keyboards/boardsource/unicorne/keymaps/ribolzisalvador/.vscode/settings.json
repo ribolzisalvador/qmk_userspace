@@ -1,0 +1,16 @@
+{
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "terminal.integrated.profiles.windows": {
+        "QMK_MSYS": {
+            "path": "C:/Program Files/QMK_MSYS/usr/bin/bash.exe",
+            "env": {
+                "MSYSTEM": "MINGW64",
+                "CHERE_INVOKING": "1"
+            },
+            "args": [
+                "--login"
+            ]
+        }
+    },
+}
